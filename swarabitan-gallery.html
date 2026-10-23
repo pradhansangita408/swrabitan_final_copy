@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-title-en="Swarabitan | Gallery" data-title-bn="স্বরবিতান | গ্যালারি">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swarabitan | Gallery</title><meta name="description" content="Swarabitan video gallery.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header">
+<div class="container header-top">
+<a class="logo" href="index.html"><img alt="Swarabitan" src="https://swarabitan.in/wp-content/uploads/2025/06/cropped-swarabitan_512px_horizental.jpg"></a>
+<div class="header-actions">
+<div class="lang-switch" role="group" aria-label="Language"><button type="button" class="lang-btn" data-set-lang="bn">বাংলা</button><button type="button" class="lang-btn active" data-set-lang="en">English</button></div>
+<a class="header-cta" href="index.html#refer"><span class="en">Refer &amp; Earn</span><span class="bn" lang="bn">রেফার করুন ও উপহার পান</span></a>
+<a class="header-cta" href="https://play.google.com/store/apps/details?id=com.swara" target="_blank" rel="noopener"><span class="en">Get the App</span><span class="bn" lang="bn">অ্যাপটি ব্যবহার করুন</span></a>
+<button type="button" class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+</div></div>
+<nav class="header-nav" id="headerNav"><div class="container"><ul class="nav-links">
+<li><a href="index.html#home"><span class="en">Home</span><span class="bn" lang="bn">হোম</span></a></li>
+<li><a href="index.html#story"><span class="en">Our Story</span><span class="bn" lang="bn">আমাদের কথা</span></a></li>
+<li><a href="index.html#why"><span class="en">Why Swarabitan</span><span class="bn" lang="bn">কেন স্বরবিতান</span></a></li>
+<li><a href="index.html#music"><span class="en">Music</span><span class="bn" lang="bn">সঙ্গীত</span></a></li>
+<li><a href="index.html#learn"><span class="en">Learn Music</span><span class="bn" lang="bn">সঙ্গীত শিখুন</span></a></li>
+<li><a href="index.html#bom"><span class="en">Beauty of Music</span><span class="bn" lang="bn">সঙ্গীতের সৌন্দর্য</span></a></li>
+<li><a href="index.html#community"><span class="en">Swarabitan Community</span><span class="bn" lang="bn">স্বরবিতান সঙ্ঘ</span></a></li>
+<li class="nav-cta-item"><a href="index.html#refer"><span class="en">Refer &amp; Earn</span><span class="bn" lang="bn">রেফার করুন ও উপহার পান</span></a></li>
+<li class="nav-cta-item"><a href="https://play.google.com/store/apps/details?id=com.swara" target="_blank" rel="noopener"><span class="en">Get the App</span><span class="bn" lang="bn">অ্যাপটি ব্যবহার করুন</span></a></li>
+</ul></div></nav></header>
+<main class="container">
+<section class="gallery-hero"><h1 class="en section-title">Gallery</h1><h1 class="bn section-title" lang="bn">গ্যালারি</h1></section>
+<div class="gallery-tabs" role="tablist">
+<button type="button" class="g-tab active" role="tab" data-tab="bom"><span class="en">Beauty of Music</span><span class="bn" lang="bn">সঙ্গীতের সৌন্দর্য</span></button>
+<button type="button" class="g-tab" role="tab" data-tab="music"><span class="en">Music Moments</span><span class="bn" lang="bn">সঙ্গীতের মুহূর্ত</span></button>
+<button type="button" class="g-tab" role="tab" data-tab="voices"><span class="en">Voices of the Swarabitan Community</span><span class="bn" lang="bn">স্বরবিতান সঙ্ঘের কথা</span></button>
+</div>
+<div class="gallery-lead" id="bomLead"><p class="en section-subheading">Listen to the stories. Discover the beauty of music.</p><p class="bn section-subheading" lang="bn">শুনুন তাঁদের কথা। আবিষ্কার করুন সঙ্গীতের সৌন্দর্য।</p></div>
+<section class="video-grid" id="videoGrid"></section>
+<div class="gallery-more"><button type="button" class="btn btn-primary" id="seeMore"><span class="en">See More</span><span class="bn" lang="bn">আরও দেখুন</span></button></div>
+</main>
+
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true"><button type="button" class="video-modal-close" id="videoClose" aria-label="Close">×</button>
+<div class="video-modal-inner"><video id="modalVideo" controls playsinline></video><h3 id="modalTitle"></h3></div></div>
+
+<footer class="site-footer"><div class="container">
+<div class="footer-grid">
+<div class="footer-brand"><a class="footer-logo" href="index.html#home"><img alt="Swarabitan" src="https://swarabitan.in/wp-content/uploads/2025/06/cropped-swarabitan_512px_horizental.jpg"></a>
+<div class="footer-name"><span class="en">Swarabitan</span><span class="bn" lang="bn">স্বরবিতান</span></div>
+<p class="footer-copy"><span class="en">Explore the Soul of Bengali Music.</span><span class="bn" lang="bn">বাংলা সঙ্গীতের অন্তরাত্মার সন্ধানে।</span></p></div>
+<div class="footer-col"><h4><span class="en">Explore</span><span class="bn" lang="bn">অন্বেষণ করুন</span></h4>
+<a href="index.html#home"><span class="en">Home</span><span class="bn" lang="bn">হোম</span></a>
+<a href="index.html#story"><span class="en">Our Story</span><span class="bn" lang="bn">আমাদের কথা</span></a>
+<a href="index.html#why"><span class="en">Why Swarabitan</span><span class="bn" lang="bn">কেন স্বরবিতান</span></a>
+<a href="index.html#music"><span class="en">Music</span><span class="bn" lang="bn">সঙ্গীত</span></a>
+<a href="index.html#learn"><span class="en">Learn</span><span class="bn" lang="bn">সঙ্গীত শিখুন</span></a>
+<a href="index.html#bom"><span class="en">Beauty of Music</span><span class="bn" lang="bn">সঙ্গীতের সৌন্দর্য</span></a>
+<a href="index.html#community"><span class="en">Swarabitan Community</span><span class="bn" lang="bn">স্বরবিতান সঙ্ঘ</span></a>
+<a href="index.html#refer"><span class="en">Refer &amp; Earn</span><span class="bn" lang="bn">রেফার করুন ও উপহার পান</span></a></div>
+<div class="footer-col"><h4><span class="en">Connect</span><span class="bn" lang="bn">যোগাযোগ</span></h4>
+<a href="mailto:admin@musicool.in"><span class="en">Contact Us</span><span class="bn" lang="bn">যোগাযোগ করুন</span></a>
+<a href="index.html#faq"><span class="en">Support</span><span class="bn" lang="bn">সহায়তা</span></a>
+<a href="mailto:admin@musicool.in"><span class="en">Email</span><span class="bn" lang="bn">ই-মেল</span></a>
+<a href="tel:+919830016535"><span class="en">Phone</span><span class="bn" lang="bn">ফোন</span></a>
+<a href="#"><span class="en">Social Media</span><span class="bn" lang="bn">সামাজিক মাধ্যম</span></a></div>
+<div class="footer-col"><h4><span class="en">Legal</span><span class="bn" lang="bn">আইনি</span></h4>
+<a href="#"><span class="en">Privacy Policy</span><span class="bn" lang="bn">গোপনীয়তা নীতি</span></a>
+<a href="#"><span class="en">Terms &amp; Conditions</span><span class="bn" lang="bn">শর্তাবলি</span></a>
+<a href="#"><span class="en">Delete Account</span><span class="bn" lang="bn">অ্যাকাউন্ট মুছে ফেলুন</span></a></div>
+<div class="footer-col"><h4><span class="en">Download App</span><span class="bn" lang="bn">অ্যাপটি ডাউনলোড করুন</span></h4>
+<a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.swara" target="_blank" rel="noopener"><span class="en">Download App</span><span class="bn" lang="bn">অ্যাপটি ডাউনলোড করুন</span></a></div>
+</div>
+<div class="footer-bottom"><span class="en">© 2026 Swarabitan. An initiative of Musicool Technologies Pvt. Ltd.</span><span class="bn" lang="bn">© ২০২৬ স্বরবিতান। Musicool Technologies Pvt. Ltd.-এর একটি উদ্যোগ।</span></div>
+</div></footer>
+<script src="site.js"></script>
+<script>
+(function(){
+  var VIDEOS=[{"cat": "bom", "file": "untold-story-swarabitan", "dur": "3:38", "en": "The Untold Story Behind Swarabitan", "bn": "স্বরবিতান তৈরির অজানা গল্প"}, {"cat": "bom", "file": "story-behind-swarabitan", "dur": "3:27", "en": "Swarabitan: The Story Behind a New Home for Rare & Authentic Bengali Songs", "bn": "স্বরবিতান: দুর্লভ ও নির্ভরযোগ্য বাংলা গানের নতুন ঠিকানার গল্প"}, {"cat": "music", "file": "amii-shudhu-rohinu-baaki", "dur": "2:47", "en": "Amii Shudhu Rohinu Baaki — Rabindra Jayanti Tribute", "bn": "আমিই শুধু রইনু বাকি — রবীন্দ্রজয়ন্তীর শ্রদ্ধার্ঘ্য"}, {"cat": "music", "file": "aaji-bijon-ghore", "dur": "4:01", "en": "Aaji Bijon Ghore — Rabindra Sangeet (Esraj Instrumental)", "bn": "আজি বিজন ঘরে নিশীথরাতে — রবীন্দ্রসঙ্গীত (এসরাজে)"}, {"cat": "music", "file": "prabhu-amar-priyo-amar", "dur": "3:40", "en": "Prabhu Amar Priyo Amar — Esraj (Swamiji & Thakur)", "bn": "প্রভু আমার প্রিয় আমার — এসরাজ (স্বামীজি ও ঠাকুর)"}, {"cat": "voices", "file": "story-behind-swarabitan", "dur": "3:27", "en": "Swarabitan: The Story Behind a New Home for Rare & Authentic Bengali Songs", "bn": "স্বরবিতান: দুর্লভ ও নির্ভরযোগ্য বাংলা গানের নতুন ঠিকানার গল্প"}];
+  var PAGE=6, cat='bom', shown=PAGE;
+  var grid=document.getElementById('videoGrid'), more=document.getElementById('seeMore'), lead=document.getElementById('bomLead');
+  var tabs=document.querySelectorAll('.g-tab');
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function render(){
+    var list=VIDEOS.filter(function(v){return v.cat===cat;});
+    lead.style.display = cat==='bom' ? '' : 'none';
+    grid.innerHTML=list.slice(0,shown).map(function(v,i){
+      return '<button type="button" class="video-card" data-i="'+VIDEOS.indexOf(v)+'">'
+        +'<div class="thumb"><img loading="lazy" alt="" src="assets/thumbnails/'+v.file+'.jpg"><span class="play">▶</span><span class="duration">'+v.dur+'</span></div>'
+        +'<div class="video-meta"><h3><span class="en">'+esc(v.en)+'</span><span class="bn" lang="bn">'+esc(v.bn)+'</span></h3><p>Swarabitan</p></div></button>';
+    }).join('');
+  }
+  function show(c,push){
+    cat=c; shown=PAGE;
+    tabs.forEach(function(t){t.classList.toggle('active',t.getAttribute('data-tab')===c);});
+    if(push&&history.replaceState) history.replaceState(null,'','#'+c);
+    render();
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.getAttribute('data-tab'),true);});});
+  more.addEventListener('click',function(){
+    var total=VIDEOS.filter(function(v){return v.cat===cat;}).length;
+    if(shown<total){shown+=PAGE;render();} else {window.scrollTo({top:0,behavior:'smooth'});}
+  });
+  var modal=document.getElementById('videoModal'), mv=document.getElementById('modalVideo'), mt=document.getElementById('modalTitle');
+  grid.addEventListener('click',function(e){
+    var b=e.target.closest('.video-card'); if(!b) return;
+    var v=VIDEOS[+b.getAttribute('data-i')];
+    var bn=document.documentElement.getAttribute('data-lang')==='bn';
+    mt.textContent=bn?v.bn:v.en;
+    mv.src='assets/videos/'+v.file+'.mp4'; mv.poster='assets/thumbnails/'+v.file+'.jpg';
+    modal.classList.add('open'); document.body.classList.add('lock');
+    var p=mv.play(); if(p&&p.catch) p.catch(function(){});
+  });
+  window.closeVideo=function(){mv.pause(); mv.removeAttribute('src'); mv.load(); modal.classList.remove('open'); document.body.classList.remove('lock');};
+  document.getElementById('videoClose').addEventListener('click',window.closeVideo);
+  modal.addEventListener('click',function(e){if(e.target===modal) window.closeVideo();});
+  var h=(location.hash||'').replace('#','');
+  show(['bom','music','voices'].indexOf(h)>-1?h:'bom',false);
+})();
+</script>
+</body></html>
